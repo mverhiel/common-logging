@@ -12,7 +12,7 @@
       <nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output" location="520,20">
         <translation xmi:type="utility:TranslatableString" key="OutTerminal.Output" bundleName="common_logging/log_exception" pluginId="common-logging"/>
       </nodes>
-      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="296,60" destination="file" filePath="C:\exception\trace\path\exception-file.txt" pattern="${CURRENT_TIMSTAMP}&#xD;&#xA;--- Exception List ---&#xD;&#xA;${ExceptionList}">
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="296,60" destination="file" filePath="C:\exception\trace\path\exception-file.txt" pattern="${CURRENT_TIMESTAMP}&#xD;&#xA;--- Exception List ---&#xD;&#xA;${ExceptionList}">
         <translation xmi:type="utility:ConstantString" string="Trace"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_1" sourceNode="InTerminal.Input" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
